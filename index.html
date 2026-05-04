@@ -8,12 +8,70 @@
     <style>
         .hero { background: #f8f9fa; padding: 60px 0; }
         .vehicle-card { margin-bottom: 20px; }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 1rem 2rem;
+            color: white;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #ffcc00; /* Warna aksen saat hover */
+        }
+
+        .main-footer {
+            background-color: #222;
+            color: #ccc;
+            padding: 40px 20px 10px;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #444;
+            margin-top: 30px;
+            padding-top: 10px;
+            font-size: 0.8rem;
+        }
     </style>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo">EzraRent.</div>
+        <ul class="nav-links">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Katalog Mobil</a></li>
+            <li><a href="#">Cara Sewa</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
     <div class="hero text-center">
         <h1>Temukan Kendaraan Impian Anda</h1>
-        <p>Sewa mobil dan motor dengan proses cepat dan harga bersahabat.</p>
+        <p>Sewa Mobil dan Motor Dengan Proses Cepat dan Harga Bersahabat.</p>
     </div>
 
     <div class="container my-5">
@@ -30,6 +88,24 @@
             </div>
             </div>
     </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Ezra Rental Kendaraan</h3>
+                <p>Solusi perjalanan nyaman dan terpercaya di Yogyakarta.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Kontak Kami</h4>
+                <p>Email: info@ezra-rent.com</p>
+                <p>WhatsApp: +62 812-3456-7890</p>
+                <p>Alamat: Jl. Grafika No. 2, Kampus UGM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ezra Nubala Gautama. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
